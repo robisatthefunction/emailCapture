@@ -1,0 +1,21 @@
+{
+  "plugin_type": "widget",
+  "name": "Email form",
+  "edit_page_url": "https://www.nordstromrack.com/",
+  "form_schema": [
+    {
+      "default_value": "Pay Less and get more",
+      "field_type": "text",
+      "name": "text",
+      "label": "A text field",
+      "options": null
+    }
+  ],
+  "description": "",
+  "options": {
+    "apply_js": "var utils = optimizely.get('utils');\n\nutils.waitForElement('body')\n  .then(function(elem) {\n    // Prepend the extension html to the body\n    elem.insertAdjacentHTML('afterbegin', extension.$html);\n  });\n",
+    "html": "<div class=\"nr-home__email-collector\"><form method=\"post\" novalidate=\"\" class=\"email-collector email-collector--opened email-collector--nordstromrack\"><h3 class=\"email-collector__headline\"><span>{{extension.text}}</span></h3><p class=\"email-collector__incentive email-collector__incentive--narrow email-collector__incentive--nowrap\"><span>Sign up <wbr>with your email <wbr>for the latest <wbr>on sales, events <wbr>and more!</span></p><fieldset class=\"email-collector__fields\"><label class=\"email-collector__email\"><div class=\"email-collector__label email-collector__label--hide\">email address</div><input name=\"email\" placeholder=\"email address\" type=\"email\" class=\"email-collector__input\"></label><div class=\"email-collector__cta\"><div class=\"email-collector__submit\"><button type=\"submit\" class=\"cta-button cta-button--secondary cta-button--nordstromrack\"><span class=\"cta-button__content\">Sign Up</span><img alt=\"spinner\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB6ElEQVR4nI2UO0hcURCG7+q6vhAhWqyiqLVgp4F0FnYSSOErxlbBJoWgEjtLFWOnkkpQsApYSDBlRFFMQIikUUHRhSw+UePbvX5/du5yXU3WAx//zNwzc86cc3aDrus63ggEArlINrF982uQbnhPLOL8YwST/Gr4SPJLkq6xw/AKXkDECmchV65v9eQia1AKnTACx1AIR745GeRfPtgJldPQHD6cqQ38WvxVdAb9AYMQxU+3Rc987aeTc6egttdDoBJtJ/gT+zX2KfYftM+XpC5cVHkVmoMdlaPev1jvSwTrmDf71AESj/E9x1rWAscqGoRbnEU+NqINmvtUAd+IwYHwDldnUoLmwx6xsRQFHDvUS/JCkKFO1M4oVGkFgl1M+pyqEPPKLEddRFSkHwog6sSv+Dljx4mfiW7sXGeyYtX1Ht6hX//3Ou1gi5iz6cWCdv9N0OPEH9e3FLvIgxbyltHvFDtSOyFohXno1aNjgvrdxT707aAYiRH7jT1pC99gz6vIFbR5CQT1e5mCN9jnaC3f9I7CtoMP+FvokO3q7zvRvXsFMpE5mCa+YTsaQBfQVaiHtzCh527tP/oBlsMvGDZfV7kNBSSdUGwcuxnV38VF4mCTimxBh2/COuj2TuQQ1w/xkx1BYtwD0aDcaegH9T8AAAAASUVORK5CYII=\" class=\"cta-button__spinner\"></button></div><div class=\"email-collector__cancel\"><button type=\"button\" class=\"cta-button cta-button--naked cta-button--full-width cta-button--nordstromrack\"><span class=\"cta-button__content\">Maybe Later</span><img alt=\"spinner\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB6ElEQVR4nI2UO0hcURCG7+q6vhAhWqyiqLVgp4F0FnYSSOErxlbBJoWgEjtLFWOnkkpQsApYSDBlRFFMQIikUUHRhSw+UePbvX5/du5yXU3WAx//zNwzc86cc3aDrus63ggEArlINrF982uQbnhPLOL8YwST/Gr4SPJLkq6xw/AKXkDECmchV65v9eQia1AKnTACx1AIR745GeRfPtgJldPQHD6cqQ38WvxVdAb9AYMQxU+3Rc987aeTc6egttdDoBJtJ/gT+zX2KfYftM+XpC5cVHkVmoMdlaPev1jvSwTrmDf71AESj/E9x1rWAscqGoRbnEU+NqINmvtUAd+IwYHwDldnUoLmwx6xsRQFHDvUS/JCkKFO1M4oVGkFgl1M+pyqEPPKLEddRFSkHwog6sSv+Dljx4mfiW7sXGeyYtX1Ht6hX//3Ou1gi5iz6cWCdv9N0OPEH9e3FLvIgxbyltHvFDtSOyFohXno1aNjgvrdxT707aAYiRH7jT1pC99gz6vIFbR5CQT1e5mCN9jnaC3f9I7CtoMP+FvokO3q7zvRvXsFMpE5mCa+YTsaQBfQVaiHtzCh527tP/oBlsMvGDZfV7kNBSSdUGwcuxnV38VF4mCTimxBh2/COuj2TuQQ1w/xkx1BYtwD0aDcaegH9T8AAAAASUVORK5CYII=\" class=\"cta-button__spinner\"></button></div></div></fieldset><div class=\"email-collector__disclaimer\">By signing up, you agree to our <a href=\"/terms\" target=\"_blank\" class=\"email-collector__terms\">Terms &amp; Conditions</a>.</div><button type=\"button\" class=\"email-collector__close-button\"><span class=\"email-collector__close-text\">Close</span><span class=\"email-collector__close-icon\"></span></button></form></div>",
+    "css": ".email-form {\n  background-color: #fff575;\n  border-bottom: 1px solid #e0d769;\n  color: #555;\n  padding: 10px;\n  font-weight: bold;\n  text-align: center;\n  font-size: 20px;\n}",
+    "undo_js": "var extensionElement = document.getElementById('optimizely-extension-' + extension.$instance);\nif (extensionElement) {\n  extensionElement.parentElement.removeChild(extensionElement);\n}\n"
+  }
+}
